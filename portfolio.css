@@ -1,39 +1,51 @@
-/* Header style */
-header
-{
-	position: relative;
-	width: 100%;
-	height: 60px;
-	background-color: #505050;
+*{
+	margin: 0px;
+	padding: 0px;
 }
-	#header-container
-	{
-		position: relative;
-		width: 1200px;
-		height: 60px;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #505050;
+body{
+	text-align: center;
+}
+	.wrapper{
+		width: 1170px;
+		margin: 0 auto;
 	}
-		#title-joaco
-		{
-			top: 12px;
-			float: left;
+		header{
+			height: 100px;
+			background: #262626;
+			width: 100%;
+			z-index: 12;
+			position: fixed;
 		}
-		.title
-		{
-			position: relative;
-			font-family: miso-bold;
-			color: #ffffff;
-			font-size: 30px;
-			margin-bottom: 20px;
-		}
-			#icons-container-right
-			{
-				position: relative;
-				top: 8px;
-				float: right;
+			.logo{
+				width: 30%;
+				float: left;
+				line-height: 100px;
 			}
+			.logo a{
+				text-decoration: none;
+				font-size: 30px;
+				font-family: bignoodletitling;
+				color: #ffffff;
+				letter-spacing: 5px;
+			}
+			nav{
+				float: right;
+				line-height: 100px	;
+			}
+			nav a{
+				text-decoration: none;
+				font-family: bignoodletitling;
+				letter-spacing: 4px;
+				font-size: 20px;
+				margin: 0 10px;
+				color: #ffffff;
+			}
+				#icons-container-right
+				{
+					position: relative;
+					top: 15px;
+					float: right;
+				}
 				.icon
 				{
 					position: relative;
@@ -42,13 +54,11 @@ header
 					margin-right: 8px;
 					display: inline-block;
 				}
-/* Main style */
+			
 #portfolio-1
 {
-	background-image: url(../image/ground.png);
-	background-repeat: repeat-x;
-	background-position: center bottom;
-	background-color: #00bff3;
+	background: url(img/gif.gif) no-repeat center;
+	background-size: 100%;
 }
 .portfolio
 {
@@ -56,10 +66,6 @@ header
 	width: 100%;
 	height: 600px;
 }
-	#portfolio-container-1
-	{
-		background-image: url(../image/interactive-resume.png);
-	}
 	.portfolio-container
 	{
 		position: relative;
@@ -74,10 +80,6 @@ header
 			width: 360px;
 			top: 50%;
 			transform: translateY(-50%);
-		}
-		.portfolio-text-container-left
-		{
-			left: 0px;
 		}
 			.portfolio-text-title
 			{
@@ -115,7 +117,7 @@ header
 							background: none;
 							color: #ffffff;
 							font-weight: bold;
-							border-style: solid;
+							border-style: none;
 							border-width: 2px;
 							border-radius: 5px;
 							border-color: #ffffff;
@@ -125,7 +127,7 @@ header
 	background-image: url(../image/ground.png);
 	background-repeat: repeat-x;
 	background-position: center bottom;
-	background-color: #f38a00;
+	background-color: #3c4c69a8;
 }	
 h2{
 	color: #ffffff;
@@ -147,15 +149,16 @@ h2{
 			border-radius: 15px;
 			box-shadow: 10px 10px 30px #333;
 		}
-/* Footer style */
+
 #footer-container
 {
 	position: relative;
-	width: 1200px;
+	width: 1501px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: auto;
 	background-color: #505050;
+	text-align: center;
 }
 	.footer-column
 	{
@@ -165,6 +168,7 @@ h2{
 		margin-top: 40px;
 		margin-bottom: 40px;
 		float: left;
+		margin-right: 550px;
 	}
 		.avatar
 		{
